@@ -4,7 +4,7 @@ WORKDIR /usr/src/iotd
 COPY pom.xml .
 RUN mvn -B dependency:go-offline
 
-COPY . .
+COPY src src
 RUN mvn package
 
 # app
